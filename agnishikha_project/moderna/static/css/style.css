@@ -21,6 +21,11 @@ body {
 	font-weight:300;
 	line-height:1.6em;
 	color:#656565;
+	overflow: hidden;
+}
+
+#blog-body {
+	overflow-y: scroll;
 }
 
 a:active {
@@ -52,8 +57,14 @@ h1,h2, h3, h4, h5, h6 {
 	width:100%;
 	margin:0;	
 	padding:0;
+	overflow: hidden;
 }
 
+#blog-wrapper{
+	width:100%;
+	margin:0;
+	padding:0;
+}
 
 .row,.row-fluid {
 	margin-bottom:30px;
@@ -66,8 +77,6 @@ h1,h2, h3, h4, h5, h6 {
 .row.nomargin,.row-fluid.nomargin {
 	margin-bottom:0;
 }
-
-
 
 /* ===================================
 3. Responsive media
@@ -357,6 +366,7 @@ section.callaction {
 #content img {
 	max-width:100%;
 	height:auto;
+	margin: 10px;
 }
 
 /* --- Call to action --- */
@@ -441,6 +451,8 @@ section.callaction {
 
 #inner-headline{
 	background:#252525;
+	background-image: url("/static/img/blog-header-background.jpg");
+	background-size: cover;
 	position:relative;
 	margin:0;
 	padding:0;
@@ -1081,6 +1093,9 @@ article .post-heading h3 a:hover {
 	text-decoration:none;
 }
 
+.blog-title, .blog-sub-title{
+    color: #FFFFFF;
+}
 
 /* --- post meta --- */
 .post-meta {

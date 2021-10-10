@@ -39,6 +39,7 @@ jQuery(function($) {
 
 {% block stylesheets %}
 {{ block.super }}
+<link rel="shortcut icon" href="{% static "img/favicon.ico" %}">
 <link rel="stylesheet" href="{% static "mezzanine/css/admin/global.css" %}">
 <style>
     /* These are set in PageAdmin's view methods, and mezzanine.utils.admin.SingletonAdmin */
@@ -51,6 +52,7 @@ jQuery(function($) {
 {% block rtl_styles %}
 {{ block.super }}
 <link rel="stylesheet" type="text/css" href="{% static "mezzanine/css/admin/rtl.css" %}" />
+
 {% endblock %}
 
 {% block before_content %}
